@@ -6,6 +6,7 @@ function Square(props){
     <div>
     <style jsx>{`
       `}</style>
+      {props.image}
     </div>
   );
 }
@@ -14,7 +15,8 @@ Square.propTypes = {
   type: PropTypes.string.isRequired,
   id: PropTypes.number.isRequired,
   hasYou: PropTypes.bool.isRequired, 
-  hasEnemy: PropTypes.bool.isRequired
+  hasEnemy: PropTypes.bool.isRequired,
+  image: PropTypes.string.isRequired
 };
 
 export default Square

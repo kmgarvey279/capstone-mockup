@@ -1,54 +1,64 @@
 import React from 'react';
 import Square from './Square';
+import lava from '../assets/images/lava.png';
+import empty from '../assets/images/empty.png';
 
 var levelLayout = [
   {
     type: 'empty',
     id: 1,
     hasYou: true,
-    hasEnemy: false
+    hasEnemy: false,
+    image: <img src={empty} weight="100" height="100" />
   },
   {
     type: 'empty',
     id: 2,
     hasYou: false,
-    hasEnemy: false
+    hasEnemy: false,
+    image: <img src={empty} weight="100" height="100" />
   },
   {
     type: 'fire',
     id: 3,
     hasYou: false,
-    hasEnemy: false
+    hasEnemy: false,
+    image: <img src={lava} weight="100" height="100" />
   },
   {
     type: 'empty',
     id: 4,
     hasYou: false,
-    hasEnemy: true
+    hasEnemy: true,
+    image: <img src={empty} weight="100" height="100" />
   },
   {
     type: 'empty',
     id: 5,
     hasYou: false,
-    hasEnemy: false
+    hasEnemy: false,
+    image: <img src={empty} weight="100" height="100" />
   },
   {
     type: 'empty',
     id: 6,
     hasYou: false,
-    hasEnemy: false
+    hasEnemy: false,
+    image: <img src={empty} weight="100" height="100" />
   },
   {
     type: 'fire',
     id: 7,
     hasYou: false,
-    hasEnemy: false
+    hasEnemy: false,
+    image: <img src={lava} weight="100" height="100" />
   },
   {
     type: 'empty',
     id: 8,
     hasYou: false,
-    hasEnemy: true
+    hasEnemy: true,
+    image: <img src={empty} weight="100" height="100" />
   }
 ];
 
@@ -64,7 +74,6 @@ function Level() {
       }
       
       div#square {
-        background-color: gray;
         height: 100px;
         width: 100px;
         display: inline-block;
@@ -78,6 +87,7 @@ function Level() {
         id={square.id}
         hasYou={square.hasYou}
         hasEnemy={square.hasEnemy}
+        image={square.image}
         key={index}/>
       </div>
     )}

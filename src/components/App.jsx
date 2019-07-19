@@ -6,6 +6,8 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 function App(){
   return (
     <div>
+    <style jsx>{`
+      `}</style>
       <Router>
         <Route exact path="/" component={Title} />
         <Route path='/game' component={Game} />
