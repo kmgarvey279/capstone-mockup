@@ -19,7 +19,6 @@ function Game() {
       playerHealth={playerStats.playerHealth}
       playerWeapon={playerStats.playerWeapon}
       playerArmor={playerStats.playerArmor}/>
-      <h1><Link to="/end" playerAlive={{ playerAlive: true}}>Link</Link></h1>
       <h1><Link to="/end">End</Link></h1>
     </div>
   );
