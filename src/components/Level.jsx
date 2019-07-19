@@ -59,7 +59,8 @@ var levelLayout = [
     hasYou: false,
     hasEnemy: true,
     image: <img src={empty} weight="100" height="100" />
-  }
+  },
+  
 ];
 
 function Level() {
