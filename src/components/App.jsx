@@ -1,15 +1,15 @@
 import React from "react";
 import Title from "./Title";
 import Game from "./Game";
-import { Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 function App(){
   return (
     <div>
-      <Switch>
+      <Router>
         <Route exact path="/" component={Title} />
         <Route path='/game' component={Game} />
-      </Switch>
+      </Router>
     </div>
   );
 }

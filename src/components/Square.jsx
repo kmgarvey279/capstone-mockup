@@ -1,10 +1,11 @@
 import React from 'react';
-import Proptypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 function Square(props){
   return (
     <div>
-      
+    <style jsx>{`
+      `}</style>
     </div>
   );
 }

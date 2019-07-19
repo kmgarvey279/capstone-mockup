@@ -7,17 +7,17 @@ var playerStats = {
   playerHealth: 70,
   playerWeapon: 'flare',
   playerArmor: 'jumpsuit'
-}
+};
 
 function Game() {
   return (
     <div>
       <Level/>
       <hr/>
-      <GameUI playerAlive:{playerStats.playerAlive}
-      playerHealth:{playerStats.playerHealth}
-      playerWeapon:{playerStats.playerWeapon}
-      playerArmor: {playerStats.playerArmor}/>
+      <GameUI playerAlive={playerStats.playerAlive}
+      playerHealth={playerStats.playerHealth}
+      playerWeapon={playerStats.playerWeapon}
+      playerArmor={playerStats.playerArmor}/>
     </div>
   );
 }
